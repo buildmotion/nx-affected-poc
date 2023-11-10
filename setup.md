@@ -60,3 +60,10 @@ warning: in the working copy of 'tsconfig.base.json', LF will be replaced by CRL
 
    https://cloud.nx.app/orgs/workspace-setup?accessToken=YWFlZmI4YTgtYzczNS00Njk3LTg1MzItNGI5MWVjNzU1YjMwfHJlYWQtd3JpdGU=
 ```
+
+## Add Projects
+
+ yarn nx generate @nrwl/angular:library library-for-app-one --style=scss --importPath=@affected/app-one-lib --no-interactive
+ yarn nx generate @nrwl/angular:library library-for-app-two --style=scss --importPath=@affected/app-two-lib --no-interactive
+ yarn nx generate @nrwl/angular:library library-for-app-three --style=scss --importPath=@affected/app-three-lib --no-interactive
+ yarn nx generate @nrwl/angular:library shared-library --style=scss --importPath=@affected/shared-lib --no-interactive
