@@ -1,0 +1,27 @@
+{
+  "name": "library-for-app-three",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/library-for-app-three/src",
+  "prefix": "nx-affected-poc",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/library-for-app-three"],
+      "options": {
+        "jestConfig": "libs/library-for-app-three/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/library-for-app-three/**/*.ts",
+          "libs/library-for-app-three/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
