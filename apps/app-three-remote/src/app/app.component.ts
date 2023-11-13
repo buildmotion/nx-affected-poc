@@ -1,3 +1,4 @@
+import { SharedServiceService } from '@affected/shared-lib';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app-three-remote';
+
+  constructor(
+    private sharedService: SharedServiceService
+  ) {
+    this.sharedService.share('app-three-remote');
+  }
+  )
 }

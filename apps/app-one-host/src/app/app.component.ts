@@ -15,5 +15,6 @@ export class AppComponent {
     private sharedService: SharedServiceService
   ) {
     this.oneService.getOne();
+    this.sharedService.share('app-one-host');
   }
 }
