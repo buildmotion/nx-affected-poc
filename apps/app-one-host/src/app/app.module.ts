@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule } from '@angular/router';
+import { AppOneServiceService } from '@affected/app-one-lib';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -11,7 +12,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
   ],
-  providers: [],
+  providers: [AppOneServiceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
