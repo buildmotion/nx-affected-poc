@@ -5,8 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class AppOneServiceService {
   getOne() {
-    throw new Error('Method not implemented.');
+    console.log('getOne() called');
   }
 
-  constructor() { }
 }
